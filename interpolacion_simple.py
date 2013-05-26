@@ -24,22 +24,20 @@ yintl = fl(xint)
 yintq = fq(xint)
 yreal = np.cos(xint)
 
-
+plt.figure("Interpolacion1")
 plt.plot(x, y, 'ro')          # Muestras
 plt.plot(xint, yintl, 'g')   # Interpolación lineal
 plt.plot(xint, yreal, 'b')   # Datos reales
-
-#plt.plot(x, y_estimado, 'b') # Best fit con regresioón lineal
 plt.title('Interpolacion lineal de $f(x) = cos(x)$')
-#plt.legend(['Verdadero', 'Ruido', 'Estimado'])
+plt.ylim(-1.5, 1.5)
+plt.legend(['Muestra', 'Interpolacion', 'Valor real'])
 
-plt.show()
-
+plt.figure("Interpolacion2")
 plt.plot(x, y, 'ro')          # Muestras
 plt.plot(xint, yreal, 'b')   # Datos reales
 plt.plot(xint, yintq, 'g')   # Interpolación cuadrática
 plt.title('Interpolacion cuadratica de $f(x) = cos(x)$')
-
-
+plt.legend(['Muestra', 'Interpolacion', 'Valor real'])
+plt.ylim(-1.5, 1.5)
 
 plt.show()
