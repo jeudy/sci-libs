@@ -8,10 +8,10 @@ def b(m, x, y):
 
 def graficar_derivada(punto):
     m = df(punto)
-    y = f(punto)
-    x = np.linspace(punto - 1, punto + 1, 100)
-    y = (m*x) + b(m, punto, y)
-    plt.plot(x, y, 'g')
+    y_punto = f(punto)
+    x_tangente = np.linspace(punto - 1, punto + 1, 100)
+    y_tangente = (m*x_tangente) + b(m, punto, y_punto)
+    plt.plot(x_tangente, y_tangente, 'g')
 
 f = np.poly1d([2, 5, 0, -2])
 

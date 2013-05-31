@@ -19,7 +19,7 @@ fq = interp1d(x, y, kind='quadratic')
 # x.min and x.max are used to make sure we do not
 # go beyond the boundaries of the data for the
 # interpolation.
-xint = np.linspace(x.min(), x.max(), 1000)  # Se crea un nuevo espacio, mismo rango, pero mas puntos
+xint = np.linspace(0, 10 * np.pi, 1000)  # Se crea un nuevo espacio, mismo rango, pero mas puntos
 yintl = fl(xint)
 yintq = fq(xint)
 yreal = np.cos(xint)
