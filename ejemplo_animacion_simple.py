@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-fig = plt.figure("Ejemplo simple de animacion de datos aleatorios")
+fig = plt.figure("Ejemplo animacion de datos aleatorios")
 ax = fig.add_subplot(111, title='xx')
 
 # La función plot devuelve 2 objetos, por eso la , en la asignación
